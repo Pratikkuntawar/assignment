@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot password</title>
+    <style>
+        
+body{
+    background-color: white;
+}
+#h3{
+    padding-top: 40px;
+}
+#img1{
+    padding-top: 30px;
+    padding-left: 30px;
+height: 30px;
+width: 60px;
+background-color: white;
+float:left;
+}
+img{
+    height:500px;
+    width:70vh;
+    float: left;
+    direction: flex;
+    padding-left: 250px;
+}
+#form2{ 
+    position: top;
+    float:right;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+.input-group{
+    position:relative;
+ }
+ .textbox{
+     border-radius: 5px;
+     padding:10px;
+     width:350px;
+ }
+ .form-label{
+     position: absolute;
+     top:0.6rem;
+     left:1.4rem;
+     cursor:text;
+     transition: top 200ms ease-in,left 200ms ease-in,bottom 200ms ease-in,right 200ms ease-in;
+ }
+ .textbox:focus~.form-label,
+ .textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label
+ {
+     top:-0.7rem;
+     left:1.4rem;
+     font-size: 10px;
+     background: white;
+     color:violet;
+ }
+ .textbox:focus{
+    border:2px solid violet;
+}
+.login-button{
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: rgb(110, 110, 243);
+    width:375px;
+    color:white;
+}
+#back{
+    text-align: center;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="forgot.css">
+    <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjYJO50VO06KukkXmLG2CN2KS9ashIseYhJw&usqp=CAU" alt="image of materialise">
+    <h3 id="h3">Materialize</h3>
+    <img src="https://demos.pixinvent.com/materialize-nextjs-admin-template/demo-2/images/pages/auth-v2-forgot-password-illustration-bordered-light.png" alt="laptop girl image">
+<div id="form2">
+<h2>Forgot Password?</h2>
+<h6 >Enter your email and we′ll send you instructions to reset your password</h6>
+<div class="input-group">
+    <input type="text"  class="textbox" required >
+    <label class="form-label" for="">E-mail</label>
+    </div>
+    <br>
+    <button class="login-button"><h4>SEND RESET LINK</h4></button>
+    <h4 id="back"><a href="materialize.html">< Back to login</a></h4>
+</div>
+</body>
+</html>

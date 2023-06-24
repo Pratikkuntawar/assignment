@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign into Account</title>
+    <style>
+        body{
+    background-color: white;
+}
+#h3{
+    padding-top: 40px;
+}
+#img1{
+    padding-top: 30px;
+    padding-left: 30px;
+height: 30px;
+width: 60px;
+background-color: white;
+float:left;
+}
+img{
+    height:500px;
+    width:70vh;
+    float: left;
+    direction: flex;
+    padding-left: 250px;
+}
+#form1{ 
+    position: top;
+    float:right;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+.input-group{
+    position:relative;
+ }
+ .textbox{
+     border-radius: 5px;
+     padding:10px;
+     width:350px;
+ }
+ .form-label{
+     position: absolute;
+     top:0.6rem;
+     left:1.4rem;
+     cursor:text;
+     transition: top 200ms ease-in,left 200ms ease-in,bottom 200ms ease-in,right 200ms ease-in;
+ }
+ .textbox:focus~.form-label,
+ .textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label
+ {
+     top:-0.7rem;
+     left:1.4rem;
+     font-size: 10px;
+     background: white;
+   color:violet;
+ }
+ .checkbox{ 
+    margin-top:10px;
+    float:left;   
+}
+.login-button{
+    padding: 4px 170px;
+    border-radius: 5px;
+    background-color: rgb(110, 110, 243);
+    width:375px;
+    color:white;
+}
+.link{
+    text-align: center;
+   font-weight: 15px;;
+}
+#google,#facebook,#git,#twitter{
+    height: 30px;
+    width: 30px;
+border-radius: 50%;
+float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-left: 30px;
+}
+#link2{
+    text-decoration: none;
+}
+.textbox:focus{
+    border:2px solid violet;
+}
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="account.css">
+    <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjYJO50VO06KukkXmLG2CN2KS9ashIseYhJw&usqp=CAU" alt="image of materialise">
+    <h3 id="h3">Materialize</h3>
+    <img src="https://demos.pixinvent.com/materialize-nextjs-admin-template/demo-2/images/pages/auth-v2-register-illustration-bordered-light.png" alt="girl image">
+    <div id="form1">
+    <h2>Adventure starts here</h2>
+    <h6>Make your app management easy and fun!</h6>
+    <div class="input-group">
+        <input type="text"  class="textbox" required>
+        <label class="form-label" for="">Username</label>
+        </div>
+        <br>
+        <div class="input-group">
+            <input type="email"  class="textbox" required>
+            <label class="form-label" for="">E-mail</label>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="password"  class="textbox" required>
+                <label class="form-label" for="">password</label>
+                </div>
+                <label for="myCheckbox"></label>
+  <input type="checkbox" id="myCheckbox" name="myCheckbox" value="checked" class="checkbox">
+  <h6>I agree to <a href="#">privacy ploicy & terms</a></h6>
+  <button class="login-button">SIGN UP</button>
+  <h6 class="link">Already have an account?<a id="link2" href="materialize.html">Sign in instead</a></h6>
+  <h5 style="text-align: center;">or</h5>
+  <img id="facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD30lEQVR4AayShW4cMRCGLQgzHArKDK9xor5KnyDMSZmZmZmZRWWuKMy8e3y7U8/KvXG6PlR+6dM3Wtv/tElYulnzHXI918HnvQZ7PNfgGfdvz1XQEJzFtz14B++y+crCO+D2XoG97ssw475swhwuGWSOK26T3zX24luWbZbehTxe1uS+YOiuCzGwOB+3mA2yAvcFU8cO7Mrsf30R3Lz4nfMcL+eglZyNkm3QGXZhJ0snzrOw3nE61uc4zQs4wmKOxC3PaIszZA4/I2On6zSsY8ni4P9Kx6loX/WJMCCOk5G47dCZ+r79HLtxR8LfueN45F318TDEORYiW4TJHBcvbf8QhT/TJoRiJkQME2bCJvRpJnwaM8TbuX24Q/k3wS82VR0JwRwOB8nSjF5xJgRvhgxIEtEj3kngLibHcQzc1YdDetWhICSj8iD5UW8MUsX+PoBGdNzJ/qXqQHBv5f4AVHCEBX4yp1LMG26EIJ2I+2hpFn18J8OsuQi5lXv9MxV7/ZAul35HIY0k7cCduJtV7tN95bt0sNgdt5g1sjR/GrX/+E9+j8DyI35xV7eh6q/cpftY2Q5tDwfSoVxYj5jwf5Yf4qV0j+bknXtY2bbZZxxIh9KtlkERfjaD52QFcgdSvl17xkq3zP4u3TwDSAlZAZ2pgmeZgrtZ6aZpraRrGpR0kuVZFTpXv1eBu1lpx5RW3DEFFu1kmWzSM21AiehC04wWc/uUxorbpn4XtU6CiuLWKcvZ5HVPxN7ZQkZwNytqnnxW1DwBSGETWSabnPsSkjuV4G5W2DC+hwPJyCZdL/22ngLJYt7DihonfAW1Y2BRR5bJJhtvaeL9OFoJ7mZrGiC3sHb8b6vlcdswFATRL2ZCDagAX12H+3DOOWe7A8d2fFQZlsRMXpzu6z8kVnGdPcDgDbRJ5InP/nFB3lFOTMlck1TVuW8gD8wzcRO3FeQfFvfeQUbeQU5M2K0yOGBJXlVjcmaO1HFTsernecPZTd/c3ZQ0CeTM7M+S3L0MNWbpT/a94abql7ebXDrburidECiZa5LsspZUZO+kzNI2Z31r9JPsmlx7M2namzHZG7J1vaQkp6qBff09csYN3FKS6jt5w1mPA2stos8sCb/b6zFzIPMcduOG+kzORjpurUaBtRKRuRwSsz8LqnpWQuaoV8MAu9V3VF/MG9Zi2DQXAxrwUlhSENeZA7aWwyY/+bc1tkKu/hOXxkLwZswHVLlTUlINNW0mjFnswC71W+FtGLOd+9ps+7k2qw/MtEmSrlNZB+c6z5jBrPo3nZNjzXQm1FTrjgSp6dYDakr3oFd9U+9y1lO9tTZT6gAAAABJRU5ErkJggg==" alt="facebook">
+  <img id="twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAeFBMVEUAAAAcl+8cm/Adm/Adm/AdmvAdmvEYl+8Qn+8bmu8bme8em/Ecme8dmu8emvAgl+8bmu8cm/Acm/EdnPAem/AcmvAdnO8dmu8cmu8Zme8ZnO8gn+8em+8cm+8cmu8gmu8enPAeme8cm+8em+8dmu8dmu8dme8gn++31JfqAAAAKHRSTlMAQL/v/9+fIBBgcH+AsN8gMM9/3++vUGCQUFAgcODAMN9wQIDQwKAQsFNO+QAAALZJREFUeAHUzsUBhEAUA9AMZN3dcei/Q5zxBvYdvwZ/SgQhZ/MFALFEb7WGZsPBdh3MMdhxDWlFaX84onciz5hcOLneLnc5wJlAT1DzwODJTvCyPvCN0efKXnhbizOVA0bLL72WGP2CCz1CTJ70ijCJ6fWE5M9whPJI/B+k9Hml7QFNRscchpyW/QGmR0FDBkd89QWQ4nNI6ZpBd19t5xdqSud/abQzuD7prriS16JKm6kPxXwGAM9DDGV/J75tAAAAAElFTkSuQmCC" alt="twitter">
+  <img id="git" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAb1BMVEX////4+Pi3ubtvcnZNUVU+Q0cpLjLr6+x3en0sMTYkKS59gIORk5aUl5n8/Pzw8PFTV1tbX2Pc3d5DSEzn5+g3PECLjpFKTlKFh4qxs7XCxMUwNTq/wcLh4uPV1tZzd3o/Q0jOz9CmqKpjZ2qfoaSrd37mAAABPUlEQVR4AW3TBZKEMBAF0B8GCHzcnbW5/xm30qEyknklcU/DgQpuYRTHUXgLFHw6SemkmcYrlcd8kRYlnlQ1PU0Fp434Qde75Qd+1FUQKiRZjyGfTGNjKhWMmSQXYO3Ibao3MlqBnSRzADhk/ycAdcqclSSHnEUD+KLt8KalMQMqpl3izU5jKxHQGCq8Ud80fq4VfuFZaIyQO4wVPEre5g+RrIAPJrkQSL8OPjv3htQmH8guU5uwgseeP7ITMYBnpdFgvlJPcx0zoLjjzS/FDrVRvH6xsqDYlLx29huRUaFx6YuI1mhKMbddf9trEzca7rmRk/FxpiRXiJO8FDBURyb4yfO7glC8TOpacmAc4ElMEWlc2oGckjwvYVFEB5wjouE6uLBwquypQym/scKrM4njElYaJy182q15aDj/oQMZkS8JH3IAAAAASUVORK5CYII=" alt="git">
+  <img id="google" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAjVBMVEVHcEz////9/f38/Pz////4+fn9/f38/P3v8PH19vb///////87q1n8wAnrSz5HifXqOijsUUMfpUYvfvQwqVhDhvRnm/bg7ur74eDykIrznpj609DI5c/uZUj/78rG2PyzzPKJyJj5zMn/++37xSf81XhqsFCa0KV1v4f0kCGvtTCCyJyXt/hyofZDj9Yia4J9AAAAC3RSTlMAojhxnKGw/RkrfoV/rhcAAAFQSURBVDiNlVPZYoMgENQYRCIgclRNNKlpm/T+/88rl3jmofPEMuPu7LpE0X+wO8RpGh9222wW5wFxtuYntJUsaATzBSCaFV/SBhMryF9dm46xrjn5cMzh8p9KRsuypJSVTgLn/o6stKAa7Gqv9r6/kadMQ/NHX8R1u7f5Dc+aGsK6CbxPYY+dLk9rd12PnYQWz6SjbEJMW03M4Y2Qj2ZjFslg4ZUQcrZXTwMug4nUHDRPXqxAFBpKKfFsovSBwGiCYFFCGKiiEKHEYPLza/T2owpRDSaRa/MmeTXwla4j7AmFQd0kxtIrYKEK9R0G5Uy0HGPM+wrC6i41L+A4avez7kYhuYbO9ess+p8VARv0RuEgue0xB/OFaaX5GEvJsTMTFsYX0ZJ3XQP3rQ8nu7+5tLO1ztZrv3w7YM6DaIUMhCwQbDw9+z4SkKYgQdvsA/wBrYgleUhdXncAAAAASUVORK5CYII=" alt="google">
+    </div>
+</body>
+</html>
